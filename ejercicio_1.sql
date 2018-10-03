@@ -31,6 +31,10 @@ CREATE TABLE images_tags(
   tag_id INTEGER REFERENCES tags(id)
 );
 
+INSERT INTO users(first_name, last_name, email) VALUES
+('Pedro', 'Zamora', 'pzamora@correo.com'),
+('Luisa', 'Peralda', 'lperalda@correo.com');
+
 -- Ingresar 2 imágenes por usuario.
 
 -- Ingresar 3 likes por cada imagen.
