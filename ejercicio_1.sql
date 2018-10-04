@@ -29,7 +29,8 @@ CREATE TABLE tags(
 
 CREATE TABLE images_tags(
   image_id INTEGER REFERENCES images(id),
-  tag_id INTEGER REFERENCES tags(id)
+  tag_id INTEGER REFERENCES tags(id);
+  PRIMARY KEY(image_id, tag_id)
 );
 
 INSERT INTO users(first_name, last_name, email) VALUES
